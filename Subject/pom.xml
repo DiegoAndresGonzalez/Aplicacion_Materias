@@ -32,7 +32,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.shedhack.requestbody</groupId>
+            <artifactId>cache-filter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
