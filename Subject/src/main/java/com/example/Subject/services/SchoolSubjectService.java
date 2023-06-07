@@ -15,4 +15,12 @@ public class SchoolSubjectService {
     public SchoolSubject createSchoolSubject(SchoolSubject subject){
         return schoolSubjectRepository.save(subject);
     }
+
+    public SchoolSubject updateSchoolSubject(Long id, SchoolSubject updatedSubject) {
+        SchoolSubject existingSubject = schoolSubjectRepository.findById(id).orElseThrow(() -> new RuntimeException("Materia no encontrada con el ID: " + id));
+
+        existingSubject.setName(updatedSubject.getName());
+
+        return schoolSubjectRepository.save(existingSubject);
+    }
 }
