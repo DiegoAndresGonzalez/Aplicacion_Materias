@@ -16,4 +16,8 @@ public class SchoolSubjectController {
         return this.schoolSubjectService.createSchoolSubject(subject);
     }
 
+    @PutMapping("/{id}")
+    public SchoolSubject updateSchoolSubject(@PathVariable Long id, @RequestBody SchoolSubject subject) {
+        return schoolSubjectService.updateSchoolSubject(id, subject);
+    }
 }
