@@ -30,7 +30,7 @@ public class UpdateSubjectServiceTest {
 
     @Test
     public void test_updateSchoolSubject_withSchoolSubject_shouldReturnStatusOk(){
-
+        // Given
         Long subjectId = 1L;
         String updatedName = "Nuevo nombre";
 
@@ -44,8 +44,10 @@ public class UpdateSubjectServiceTest {
         when(schoolSubjectRepository.findById(subjectId)).thenReturn(Optional.of(existingSubject));
         when(schoolSubjectRepository.save(existingSubject)).thenReturn(existingSubject);
 
+        // When
         SchoolSubject result = schoolSubjectService.updateSchoolSubject(subjectId, updatedSubject);
 
+        // Then
         assertThat(result.getName()).isEqualTo(updatedName);
     }
 }
