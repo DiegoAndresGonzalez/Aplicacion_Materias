@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class SchoolSubjectService {
+public
+class SchoolSubjectService {
+
     @Autowired
     SchoolSubjectRepository schoolSubjectRepository;
 

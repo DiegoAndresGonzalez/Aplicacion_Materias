@@ -3,6 +3,8 @@ package com.example.Subject;
 import com.example.Subject.models.SchoolSubject;
 import com.example.Subject.repositories.SchoolSubjectRepository;
 import com.example.Subject.services.SchoolSubjectService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -27,10 +29,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 class SubjectApplicationTests {
-@Autowired
-private MockMvc mockMvc;
-	@Test
-	public void test_createSchoolSubject_with_SchoolSubject_shouldGiveOk200StatusOrAnException() throws Exception {
+
+	@Autowired
+		private MockMvc mockMvc;
+
+	@Autowired
+		private ObjectMapper objectMapper;
+
+		@Test
+		public void test_createSchoolSubject_with_SchoolSubject_shouldGiveOk200StatusOrAnException() 
+			throws Exception {
 
 		mockMvc.perform(MockMvcRequestBuilders.post("/subject")
 						.content("{\"name\": \"Spanish\"}")
@@ -38,7 +46,7 @@ private MockMvc mockMvc;
 				.andExpect(status().isOk());
 
 
-	}
+		}
 
 
 
