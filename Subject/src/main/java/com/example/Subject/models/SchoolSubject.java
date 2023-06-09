@@ -3,7 +3,6 @@ package com.example.Subject.models;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name="subject")
 public
@@ -35,4 +34,7 @@ class SchoolSubject {
     void setName(String name) {
         this.name = name;
     }
+
+
+
 }
