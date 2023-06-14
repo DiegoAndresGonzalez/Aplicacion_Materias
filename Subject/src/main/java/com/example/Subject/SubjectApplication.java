@@ -10,7 +10,8 @@ public class SubjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SubjectApplication.class, args);
 
-		ConvertCelsiusToKelvin ejercicio1 =
+		ConvertCelsiusToKelvin exercise1 = new ConvertCelsiusToKelvin();
+		
 	}
 
 }
