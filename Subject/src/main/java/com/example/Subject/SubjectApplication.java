@@ -1,5 +1,6 @@
 package com.example.Subject;
 
+import com.example.Exercise1.ConvertCelsiusToKelvin;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,7 +10,7 @@ public class SubjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SubjectApplication.class, args);
 
-
+		ConvertCelsiusToKelvin ejercicio1 =
 	}
 
 }

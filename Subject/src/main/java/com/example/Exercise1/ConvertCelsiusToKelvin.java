@@ -1,4 +1,4 @@
-package com.example.Ejercicio1;
+package com.example.Exercise1;
 
 public class ConvertCelsiusToKelvin {
 
