@@ -2,8 +2,8 @@ package com.example.Ejercicio1;
 
 public class ConvertCelsiusToKelvin {
 
-    public int convertCelsiusToKelvin(int numero1 , int numero2) {
-
-        
+    public double convertCelsiusToKelvin(double celsius) {
+        double kelvin = celsius + 273.15;
+        return kelvin;
     }
 }
