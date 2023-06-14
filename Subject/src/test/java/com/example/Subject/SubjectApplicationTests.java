@@ -50,6 +50,7 @@ class SubjectApplicationTests {
 
 
 
+
 	@Mock
 	private SchoolSubjectRepository schoolSubjectRepository;
 
@@ -82,3 +83,4 @@ class SubjectApplicationTests {
 		assertThat(result.getName()).isEqualTo(updatedName);
 	}
 }
+
