@@ -16,11 +16,10 @@ public class SubjectApplication {
 		Scanner scanCelsius = new Scanner(System.in);
 		System.out.println("Ingrese a continuación los grados Centigrados que desea convertir a Farenheit: ");
 		double celsius = scanCelsius.nextDouble();
+		System.out.println("Los grados Centigrados que ingresó son: " + celsius + "°" );
 		ConvertCelsiusToFahrenheit exercise2 = new ConvertCelsiusToFahrenheit();
 		double result = exercise2.convertCelsiusToFahrenheit(celsius);
 		System.out.println("La conversión de los grados Centigrados a Farenheit es de: " + result + "°" + "\n");
 
-
 	}
-
 }
