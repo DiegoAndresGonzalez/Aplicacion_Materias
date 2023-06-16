@@ -20,18 +20,6 @@ public class Patient {
     private Boolean private_social;
     private String allergies;
     private String observations;
-
-    public Patient(Long id, String name, Integer document, Integer phone, Date last_visit, Boolean private_social, String allergies, String observations) {
-        this.id = id;
-        this.name = name;
-        this.document = document;
-        this.phone = phone;
-        this.last_visit = last_visit;
-        this.private_social = private_social;
-        this.allergies = allergies;
-        this.observations = observations;
-    }
-
     public Long getId() {
         return id;
     }
