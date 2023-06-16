@@ -2,6 +2,7 @@ package com.example.Subject.models;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -16,7 +17,7 @@ public class Patient {
     private Integer phone;
 
     @Temporal(TemporalType.DATE)
-    private Date last_visit;
+    private LocalDate last_visit;
     private Boolean private_social;
     private String allergies;
     private String observations;
@@ -52,11 +53,11 @@ public class Patient {
         this.phone = phone;
     }
 
-    public Date getLast_visit() {
+    public LocalDate getLast_visit() {
         return last_visit;
     }
 
-    public void setLast_visit(Date last_visit) {
+    public void setLast_visit(LocalDate last_visit) {
         this.last_visit = last_visit;
     }
 
