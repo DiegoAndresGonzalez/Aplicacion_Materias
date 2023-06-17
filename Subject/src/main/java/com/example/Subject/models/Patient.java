@@ -18,7 +18,7 @@ public class Patient {
 
     @Temporal(TemporalType.DATE)
     private LocalDate last_visit;
-    private Boolean private_social;
+    private String private_social;
     private String allergies;
     private String observations;
     public Long getId() {
@@ -61,11 +61,11 @@ public class Patient {
         this.last_visit = last_visit;
     }
 
-    public Boolean getPrivate_social() {
+    public String getPrivate_social() {
         return private_social;
     }
 
-    public void setPrivate_social(Boolean private_social) {
+    public void setPrivate_social(String private_social) {
         this.private_social = private_social;
     }
 
