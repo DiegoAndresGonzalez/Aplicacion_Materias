@@ -3,7 +3,7 @@ package com.example.Subject.models;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 
 @Entity
 @Table(name = "patient")
