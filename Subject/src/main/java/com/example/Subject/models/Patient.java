@@ -17,10 +17,37 @@ public class Patient {
     private Integer phone;
 
     @Temporal(TemporalType.DATE)
-    private LocalDate last_visit;
-    private String private_social;
+    private LocalDate lastVisit;
+    private String socialSecurity;
     private String allergies;
     private String observations;
+    public String queryToString(){
+        return "ID: " + id +
+                "\nName: " + name +
+                "\nDocument: " + document +
+                "\nPhone: " + phone +
+                "\nLast visit: " + lastVisit +
+                "\nPrivate social: " + socialSecurity +
+                "\nAllergies: " + allergies +
+                "\nObservations " + observations +
+                "\n-----------------------------------------------";
+    }
+
+    public Patient(Long id, String name, Integer document, Integer phone, LocalDate last_visit, String private_social, String allergies, String observations) {
+        this.id = id;
+        this.name = name;
+        this.document = document;
+        this.phone = phone;
+        this.lastVisit = lastVisit;
+        this.socialSecurity = private_social;
+        this.allergies = allergies;
+        this.observations = observations;
+    }
+
+    public Patient() {
+
+    }
+
     public Long getId() {
         return id;
     }
@@ -53,20 +80,20 @@ public class Patient {
         this.phone = phone;
     }
 
-    public LocalDate getLast_visit() {
-        return last_visit;
+    public LocalDate getLastVisit() {
+        return lastVisit;
     }
 
-    public void setLast_visit(LocalDate last_visit) {
-        this.last_visit = last_visit;
+    public void setLastVisit(LocalDate lastVisit) {
+        this.lastVisit = lastVisit;
     }
 
-    public String getPrivate_social() {
-        return private_social;
+    public String getSocialSecurity() {
+        return socialSecurity;
     }
 
-    public void setPrivate_social(String private_social) {
-        this.private_social = private_social;
+    public void setPrivate_social(String socialSecurity) {
+        this.socialSecurity = socialSecurity;
     }
 
     public String getAllergies() {
